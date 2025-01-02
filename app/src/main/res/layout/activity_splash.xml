@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound"
+    tools:context=".SplashActivity">
+
+
+    <View
+        android:id="@+id/nameid"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo2" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/nameid"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/CopyrightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:text="Copyright © 2024-2025 Doluwa Royal Club"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/CopyrightText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:text="All rights reserved."
+        android:layout_centerHorizontal="true"/>
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/p_Bar2"-->
+    <!--        style="?android:attr/progressBarStyleHorizontal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:indeterminate="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+
+    <!--        android:max="100"-->
+    <!--        android:progress="0" />-->
+
+
+
+
+
+</RelativeLayout>

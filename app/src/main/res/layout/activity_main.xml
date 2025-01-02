@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1e3b66"
+        android:padding="16dp">
+
+
+
+            <RelativeLayout
+                android:id="@+id/caradview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rounded_back"
+                android:padding="16dp">
+
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/profilecoverView"-->
+<!--                    android:layout_width="102dp"-->
+<!--                    android:layout_height="102dp"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:background="#972121" />-->
+<RelativeLayout
+    android:id="@+id/detailsAndProfile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="4dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="5dp"
+                    android:outlineProvider="background"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:background="@drawable/baseline_account_circle_24"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+
+                <!-- Email -->
+<!--                <View-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_below="@id/myDetails"-->
+<!--                    android:id="@+id/emaillogo"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:background="@drawable/baseline_mail_outline_24"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/emailTextView"-->
+<!--                    android:hint="Email"-->
+<!--                    android:layout_below="@id/myDetails"-->
+<!--                    android:layout_width="wrap_content"-->
+
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_toEndOf="@+id/emaillogo"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textSize="16sp" />-->
+
+
+
+<RelativeLayout
+    android:id="@+id/myDetails"
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/profileImageView">
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:hint="Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#BE000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <!-- Phone Number -->
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/phoneNumberLogo"
+                    android:layout_below="@id/nameTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/baseline_phone_24"/>
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:hint="PhoneNumber"
+                    android:layout_below="@id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/phoneNumberLogo"
+                    android:layout_marginTop="2dp"
+                    android:textSize="16sp" />
+
+
+                <!-- Account Number -->
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/accountNumberLogo"
+                    android:layout_below="@id/phoneTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/baseline_numbers_24"/>
+                <TextView
+                    android:id="@+id/registrationNumberTextView"
+                    android:hint="Number"
+                    android:layout_below="@id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/accountNumberLogo"
+                    android:layout_marginTop="2dp"
+
+                    android:textSize="16sp" />
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/moneyLogo"
+        android:layout_below="@id/accountNumberLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/baseline_attach_money_24"/>
+    <TextView
+        android:id="@+id/haveToPayTextView"
+        android:text="H.T.Pay | Rs."
+        android:textColor="#D09D9898"
+        android:layout_below="@id/registrationNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/moneyLogo"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/haveToPayCountTextView"
+        android:hint="Number"
+        android:layout_below="@id/registrationNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/haveToPayTextView"
+        android:layout_marginTop="1dp"
+        android:textColor="#29972E"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp" />
+</RelativeLayout>
+</RelativeLayout>
+
+
+
+
+                <!--                <View-->
+                <!--                    android:id="@+id/poitView"-->
+                <!--                    android:layout_below="@id/accountNumberTextView"-->
+                <!--                    android:layout_width="400dp"-->
+                <!--                    android:layout_height="80dp"-->
+                <!--                    android:backgroundTint="#1e3b66"-->
+                <!--                    android:background="@drawable/roundbtn"/>-->
+                <!--                <View-->
+                <!--                    android:id="@+id/poitViewtoCount"-->
+                <!--                    android:layout_below="@id/accountNumberTextView"-->
+                <!--                    android:layout_width="200dp"-->
+                <!--                    android:layout_height="60dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginLeft="10dp"-->
+                <!--                    android:outlineSpotShadowColor="@color/black"-->
+                <!--                    android:backgroundTint="#388E3C"-->
+                <!--                    android:background="@drawable/roundbtn"/>-->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:background="@drawable/coinlogo"-->
+                <!--                    android:layout_marginLeft="8dp"-->
+                <!--                    android:layout_marginTop="17dp"-->
+                <!--                    android:layout_below="@id/accountNumberTextView"-->
+                <!--                    />-->
+                <!--
+                               <ImageButton
+                                   android:id="@+id/addBurnsButtonId"
+                                   android:layout_below="@id/accountNumberTextView"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_marginTop="15dp"
+                                   android:layout_alignParentRight="true"
+                                   android:layout_marginRight="20dp"
+                                   android:background="@drawable/add_photo"/>
+                               Points -->
+
+
+                <View
+                    android:id="@+id/Line2Id"
+                    android:layout_width="300dp"
+                    android:layout_height="0.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/detailsAndProfile"
+                    android:layout_marginTop="10dp"
+                    android:background="#7A494646" />
+
+                <!-- Logout Button -->
+
+
+                <RelativeLayout
+                    android:id="@+id/YearButtons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/Line2Id"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal">
+                    <Button
+                        android:id="@+id/Button2018"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="#0097A7"
+                        android:textColor="#000000"
+                        android:text="2018"/>
+
+                    <Button
+                        android:id="@+id/Button2019"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@id/Button2018"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:layout_marginHorizontal="2dp"
+                        android:text="2019"/>
+                    <Button
+                        android:id="@+id/Button2020"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@id/Button2019"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2020"/>
+
+                    <Button
+                        android:id="@+id/Button2021"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2020"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2021"/>
+
+                    <Button
+                        android:id="@+id/Button2022"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2019"
+                        android:layout_toRightOf="@id/Button2021"
+                        android:layout_marginHorizontal="2dp"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2022"/>
+                    <Button
+                        android:id="@+id/Button2023"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2020"
+                        android:layout_toRightOf="@id/Button2022"
+                        android:backgroundTint="#0097A7"
+                        android:textColor="#000000"
+                        android:text="2023"/>
+
+                    <Button
+                        android:id="@+id/Button2024"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2021"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="#0097A7"
+                        android:textColor="#000000"
+                        android:text="2024"/>
+
+
+                    <Button
+                        android:id="@+id/Button2025"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@id/Button2024"
+                        android:textColor="#000000"
+                        android:layout_below="@+id/Button2022"
+                        android:backgroundTint="#0097A7"
+                        android:layout_marginHorizontal="2dp"
+                        android:text="2025"/>
+
+
+
+
+                    <Button
+                        android:id="@+id/Button2026"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Button2023"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@id/Button2025"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2026"/>
+
+                    <Button
+                        android:id="@+id/Button2027"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2024"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2027"/>
+
+                    <Button
+                        android:id="@+id/Button2028"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2025"
+                        android:layout_toRightOf="@id/Button2027"
+                        android:layout_marginHorizontal="2dp"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2028"/>
+                    <Button
+                        android:id="@+id/Button2029"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2026"
+                        android:layout_toRightOf="@id/Button2028"
+                        android:backgroundTint="#0097A7"
+                        android:textColor="#000000"
+                        android:text="2029"/>
+                    <Button
+                        android:id="@+id/Button2030"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2027"
+                        android:textColor="#000000"
+                        android:backgroundTint="#0097A7"
+                        android:text="2030"/>
+                    <Button
+                        android:id="@+id/Button2031"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2028"
+                        android:layout_toRightOf="@id/Button2030"
+                        android:backgroundTint="#0097A7"
+                        android:textColor="#000000"
+                        android:layout_marginHorizontal="2dp"
+                        android:text="2031"/>
+                    <Button
+                        android:id="@+id/Button2032"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Button2029"
+                        android:layout_toRightOf="@id/Button2031"
+                        android:backgroundTint="#0097A7"
+                        android:textColor="#000000"
+                        android:text="2032"/>
+
+</RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/logOutButtonId"
+                    android:layout_below="@id/YearButtons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGOUT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:backgroundTint="#2F3333"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <View
+                    android:id="@+id/Line3Id"
+                    android:layout_width="300dp"
+                    android:layout_height="0.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/logOutButtonId"
+                    android:layout_marginTop="10dp"
+                    android:background="#7A494646" />
+
+                <TextView
+                    android:id="@+id/AboutApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About App"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/Line3Id"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/logopic"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="105dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_below="@id/caradview"-->
+<!--            android:layout_marginVertical="20dp"-->
+<!--            android:src="@drawable/logo2"/>-->
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/nameLogoIconId"-->
+        <!--            android:layout_width="110dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:background="@drawable/name"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginBottom="60dp"/>-->
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

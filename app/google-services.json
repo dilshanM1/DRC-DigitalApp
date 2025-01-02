@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "692652435547",
+    "project_id": "doluwa-royal-club-e44b9",
+    "storage_bucket": "doluwa-royal-club-e44b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692652435547:android:1ea362c5a44f7a6894b77e",
+        "android_client_info": {
+          "package_name": "com.example.doluwaroyalclub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChn5qme9csR0BWSUyUi_wuM9vk-7U2HcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

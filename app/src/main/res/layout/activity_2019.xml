@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound"
+    android:orientation="vertical"
+    tools:context=".Activity2019">
+
+    <!-- Profile Card (if needed in future) -->
+    <!--
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_back"
+        android:outlineProvider="bounds"
+        android:padding="16dp">
+    </androidx.cardview.widget.CardView>
+    -->
+
+    <LinearLayout
+        android:id="@+id/YearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_back"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:text="2019"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/JanuaryBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Jan."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/FebruaryBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Feb."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/MarchBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Mar."
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/JanuaryTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FebruaryTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="25dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MarchTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/Line2Id"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_marginVertical="20dp"
+            android:background="#7A494646" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/AprilBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Apr."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/MayBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="May"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/JuneBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="June"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/AprilTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MayTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="25dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/JuneTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/Line3Id"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_marginVertical="20dp"
+            android:background="#7A494646" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/JulyBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="July"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/AugustBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Aug."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/SeptemberBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Sept."
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/JulyTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AugustTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SeptemberTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/Line4Id"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_marginVertical="20dp"
+            android:background="#7A494646" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/OctoberBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Oct."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/NovemberBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Nov."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/DecemberBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#0097A7"
+                android:text="Dec."
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/OctoberTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NovemberTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DecemberTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="#0097A7"
+                android:gravity="center_horizontal"
+                android:text="Pending"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/logopic"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center_horizontal"
+
+        android:src="@drawable/logo2" />
+</LinearLayout>
